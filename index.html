@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="outer-container">
+        <h1>Time for a snack</h1>
+        <form>
+            <div class="field-container">
+                <div class="field-label">
+                    <label id="name-label" for="name">* Name </label>
+                </div>
+                <div class="field-input">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Snackful Sam" required>
+                </div>
+            </div>
+            <div class="field-container">
+                <div class="field-label">
+                    <label id="email-label" for="email">* Email </label>
+                </div>
+                <div class="field-input">
+                    <input type="text" name="email" id="email" class="input-field" placeholder="sam@nomnomnom" required>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="field-label">
+                    <label for="snack-reason">Why do you need a snack?
+                        <br>(Check all that apply) </label>
+                </div>
+                <div class="field-input">
+                    <ul id="snack-reason">
+                        <li class="checkbox">
+                            <input name="reason" value="1" type="checkbox">I'm hungry</li>
+                        <li class="checkbox">
+                            <input name="reason" value="2" type="checkbox">It's snack time</li>
+                        <li class="checkbox">
+                            <input name="reason" value="3" type="checkbox">I'm tired</li>
+                        <li class="checkbox">
+                            <input name="reason" value="4" type="checkbox">It fits my macros</li>
+                        <li class="checkbox">
+                            <input name="reason" value="5" type="checkbox">A snack is needful</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="field-label">
+                    <label for="hunger-level">How hungry are you?</label>
+                </div>
+                <div class="field-input">
+                    <select name="hunger-level">
+                        <option value="starving">Starving</option>
+                        <option value="very-hungry">Very hungry</option>
+                        <option value="hungry">Hungry</option>
+                        <option value="notHungry">I could eat</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field-container">
+                <div class="field-label">
+                    <label for="address">* Where should we send the snacks?</label>
+                </div>
+                <div class="field-input">
+                    <textarea id="address" style="height:50px;resize:vertical;" name="address" placeholder="Enter address..." required></textarea>
+                </div>
+            </div>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
